@@ -1,0 +1,105 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  color: #333;
+}
+
+header {
+  background-color: #ffe4ec;
+  color: #333;
+  text-align: center;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.language-toggle-container {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+#toggle-language {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#toggle-language:hover {
+  background-color: #c2185b;
+}
+
+header h1 {
+  margin: 0;
+  color: #e91e63;
+}
+
+header p {
+  margin-top: 5px;
+  font-style: italic;
+  color: #388e7d;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #388e7d;
+  font-weight: bold;
+}
+
+.section {
+  padding: 40px 20px;
+  background-color: #fce4ec;
+  margin-bottom: 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section:nth-child(even) {
+  background-color: #e0f2f1;
+}
+
+.section h2 {
+  color: #e91e63;
+}
+
+.product-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+footer {
+  background-color: #f8bbd0;
+  color: #333;
+  text-align: center;
+  padding: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
